@@ -1,0 +1,58 @@
+body {
+  font-family:Arial, Hevetica, sans-serif;
+}
+
+#promo {
+  text-align:center;
+  padding:40px;
+  background-image:url(../../assets/img/th.jpg);
+  background-size:cover;
+}
+
+@media (max-width:1199px) {
+  #promo {
+    padding:20px;
+  }
+}
+
+#promo .jumbotron {
+  border-radius:20px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.75);
+  max-width:800px;
+  margin:0 auto;
+}
+
+@media (max-width:991px) {
+  #promo .jumbotron {
+    padding:20px;
+  }
+}
+
+.site-section {
+  text-align:center;
+  padding:50px 0;
+}
+
+.site-section h1 {
+  font-weight:normal;
+  margin-bottom:30px;
+}
+
+#welcome p {
+  max-width:800px;
+  font-size:20px;
+  margin:0 auto;
+}
+
+.darckk-section {
+  background-color:#afbab2646421;
+}
+
+#Project .item i {
+  font-size:50px;
+}
+
+.panel-green  {
+    color: #5cb85c;
+}

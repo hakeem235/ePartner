@@ -1,0 +1,24 @@
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+            <tr>
+                <th style="display:none;">ID</th>
+        	    <th>Amount (SAR)</th>
+                <th>Period (Days)</th>
+                <th>Post Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($userPros as $userPro){
+            
+    		echo "<tr>  
+    				<td style="."display:none;".">".$pro['ProID']."</td>
+    				<td>".$userPro['ProAmount']."</td>
+    				<td>".$userPro['ProPeriod']."</td>
+    				<td>".$userPro['ProDate']."</td>
+    		  		<td>".$userPro['ProStat']."</td>
+    		  		<td><a href='ProposalView.php?id=".$userPro['ProID']."' alt='edit'>Review</a></td>
+    		  	</tr>";} ?>
+    </tbody>
+</table>

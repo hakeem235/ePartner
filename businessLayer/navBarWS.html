@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navbar-fixed-top" style="padding:0px;background-color:rgba(31,148,255,0.75);">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="index.php" style="color:rgb(252,253,255);"><strong>ePartner</strong> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="about.php" style="color:rgb(247,248,249);">About Us</a></li>
+                    <li role="presentation"><a href="freelancer.php" style="color:rgb(247,248,249);">Freelancer </a></li>
+                    <li role="presentation"><a href="projects.php" style="color:rgb(247,248,249);">Projects </a></li>
+                    <li role="presentation"><a href="hiw.php" style="color:rgb(247,248,249);">How it Works</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="profileView.php" style="padding:0px;color:rgb(247,248,249);"><?php echo $userInfo[0]["User_Name"];?>
+                    	<span class="caret"></span><img src="<?php echo $userInfo[0]["Avatar"];?>" style="width:30px;height:30px;padding:0;margin-left:5px;"></a>
+                        	<ul class="dropdown-menu" role="menu">
+                            	<li role="presentation"><a href="businessLayer/sessionDestroy.php">Logout <i class="fa fa-user-times" id="logouticon"></i></a></li>
+                            	<li role="presentation"><a href="userDashboard.php">Dashboard</a></li>
+                            	<li role="presentation"><a href="profileView.php">MY Profile</a></li>
+                            	<li role="presentation"><a href="MyProjectList.php">MY Projects</a></li>
+                            	<li role="presentation"><a href="MyProposalList.php">MY Proposals</a></li>
+                            	<li role="presentation"><a href="messages.php">Messages</a></li>
+                            	<li role="presentation"><a href="postProject.php">Post New Project</a></li>
+                            	<li role="presentation"><a href="changePassword.php">Change Password</a></li>
+                			</ul>
+                	</li>
+                </ul>
+            </div>
+        </div>
+    </nav>

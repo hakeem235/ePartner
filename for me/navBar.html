@@ -1,0 +1,69 @@
+<nav class="navbar navbar-default navbar-fixed-top" style="padding:0px;">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><strong>ePartner</strong> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="about.html">About Us</a></li>
+                    <li role="presentation"><a href="freelancer.php">Freelancer </a></li>
+                    <li role="presentation"><a href="projet.php">Projects </a></li>
+                    <li role="presentation"><a href="#">How it Works</a></li>
+                    <li role="presentation"><a href="singin.php">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<?php 
+if (isset $_SESSION['user_email'] = $email) {
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="padding:10px;">Ahmed Hakeem
+                    <span class="caret"></span><img src="assets/img/d.jpg" style="width:30px;height:30px;padding:0;margin-left:5px;"></a>
+                        <ul
+                        class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="#">Logout <i class="fa fa-user-times" id="logouticon"></i></a></li>
+                </ul>
+}else{
+<li role="presentation"><a href="singin.php">Sign In</a></li>
+}
+?>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" style="padding:0px;">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><strong>ePartner</strong> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="about.html">About Us</a></li>
+                    <li role="presentation"><a href="freelancer.php">Freelancer </a></li>
+                    <li role="presentation"><a href="projet.php">Projects </a></li>
+                    <li role="presentation"><a href="#">How it Works</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="profileView.php" style="padding:10px;">Ahmed Hakeem
+                    	<span class="caret"></span><img src="assets/img/d.jpg" style="width:30px;height:30px;padding:0;margin-left:5px;"></a>
+                        	<ul class="dropdown-menu" role="menu">
+                            	<li role="presentation"><a href="businessLayer/sessionDestroy.php">Logout <i class="fa fa-user-times" id="logouticon"></i></a></li>
+                			</ul>
+                	</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+<?php 
+if (isset $_SESSION['user_email']) {
+echo "<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="home.php" style="padding:10px;">Ahmed Hakeem
+                    <span class="caret"></span><img src="assets/img/d.jpg" style="width:30px;height:30px;padding:0;margin-left:5px;"></a>
+                        <ul
+                        class="dropdown-menu" role="menu">
+                            <li role="presentation"><a href="h">Logout <i class="fa fa-user-times" id="logouticon"></i></a></li>
+                </ul>";
+}else{
+echo "<a href="singin.php">Sign In</a>";
+}
+?>
